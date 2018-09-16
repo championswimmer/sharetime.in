@@ -710,6 +710,10 @@
   version "4.14.87"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.87.tgz#55f92183b048c2c64402afe472f8333f4e319a6b"
 
+"@types/luxon@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.2.2.tgz#3b402da20bd8ca357123851e062d2142cdbdd9bc"
+
 "@types/minimatch@3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -1669,6 +1673,12 @@ browserslist@^4.0.0:
     electron-to-chromium "^1.3.62"
     node-releases "^1.0.0-alpha.11"
 
+buefy@^0.6.7:
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/buefy/-/buefy-0.6.7.tgz#739045a3e2437c3abe0a3bcf3694da45f12ee24e"
+  dependencies:
+    bulma "0.7.1"
+
 buffer-crc32@~0.2.3:
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/buffer-crc32/-/buffer-crc32-0.2.13.tgz#0d333e3f00eac50aa1454abd30ef8c2a5d9a7242"
@@ -1700,6 +1710,10 @@ builtin-modules@^1.0.0, builtin-modules@^1.1.1:
 builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
+
+bulma@0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.1.tgz#73c2e3b2930c90cc272029cbd19918b493fca486"
 
 bytes@3.0.0:
   version "3.0.0"
@@ -5091,6 +5105,10 @@ lru-cache@^4.0.1, lru-cache@^4.1.1, lru-cache@^4.1.2, lru-cache@^4.1.3:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
+luxon@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.3.3.tgz#e66e8537a62c9b351ba69b766d7fb70b07ab5e57"
+
 make-dir@^1.0.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-1.3.0.tgz#79c1033b80515bd6d24ec9933e860ca75ee27f0c"
@@ -8074,6 +8092,10 @@ vue-class-component@^6.0.0, vue-class-component@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-6.2.0.tgz#7adb1daa9a868c75f30f97f33f4f1b94aee62089"
 
+vue-cli-plugin-buefy@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-buefy/-/vue-cli-plugin-buefy-0.3.1.tgz#6bb2bc9abd84073ff8bd8df772a6e640c7ed454f"
+
 vue-eslint-parser@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-2.0.3.tgz#c268c96c6d94cfe3d938a5f7593959b0ca3360d1"
@@ -8130,6 +8152,10 @@ vue-template-es2015-compiler@^1.6.0:
 vue@^2.5.17:
   version "2.5.17"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
+
+vuex-router-sync@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/vuex-router-sync/-/vuex-router-sync-5.0.0.tgz#1a225c17a1dd9e2f74af0a1b2c62072e9492b305"
 
 vuex@^3.0.1:
   version "3.0.1"
