@@ -11,7 +11,6 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class Time extends Vue {
   tz = this.$store.state.route.params.tz
   time = this.$store.state.route.params.time
-  mounted () {
-  }
+  mounted() {}
 }
 </script>

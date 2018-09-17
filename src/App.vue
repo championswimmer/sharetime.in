@@ -9,5 +9,4 @@
 </template>
 
 <style lang="scss">
-
 </style>
