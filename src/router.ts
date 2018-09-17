@@ -14,9 +14,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/:tz([A-Z]{3})/:time([0-2][0-9][0-5][0-9])',
+      path: '/:tz([A-Z]{2,4})/:time([0-2][0-9][0-5][0-9])',
       name: 'time',
-      component: () => import('@/pages/Time.vue')
+      component: () => import('@/pages/TimeAbbr.vue')
+    },
+    {
+      path: '/:continent/:city/:time([0-2][0-9][0-5][0-9])',
+      name: 'UTCFormatOutput',
+      component: () => import('@/pages/UTCFormatOutput.vue')
     }
   ]
 })
