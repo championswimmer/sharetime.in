@@ -4,7 +4,7 @@ export interface TimeZone {
   offset: number
   isdst: boolean
   text: string
-  utc: Array<string>
+  utc: string[]
 }
 export default [
   {

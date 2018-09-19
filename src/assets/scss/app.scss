@@ -12,22 +12,19 @@ $twitter-invert: findColorInvert($twitter);
 $github: #333;
 $github-invert: findColorInvert($github);
 
+
 @import "~bulma/sass/utilities/derived-variables";
 
 // 3. Add new color variables to the color map.
-$addColors: (
-  "twitter": (
-    $twitter,
-    $twitter-invert,
-  ),
-  "linkedin": (
-    $linkedin,
-    $linkedin-invert,
-  ),
-  "github": (
-    $github,
-    $github-invert,
-  ),
+$addColors: ("twitter": ($twitter,
+$twitter-invert,
+),
+"linkedin": ($linkedin,
+$linkedin-invert,
+),
+"github": ($github,
+$github-invert,
+),
 );
 $colors: map-merge($colors, $addColors);
 
@@ -35,3 +32,23 @@ $colors: map-merge($colors, $addColors);
 @import "~buefy/src/scss/buefy";
 
 // 4. Provide custom buefy overrides and site styles here
+
+
+h1 {
+  font-size: 4rem;
+  font-family: $family-digital;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: $family-heading;
+}
+
+.navbar {
+  * {
+    font-family: $family-digital;
+    font-weight: bold;
+  }
+}

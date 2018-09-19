@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/pages/Home.vue'
+import About from '@/pages/About.vue'
 
 Vue.use(Router)
 
@@ -10,8 +10,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'about',
+      component: About
     },
     {
       path: '/:tz([A-Z]{2,4})/:time([0-2][0-9][0-5][0-9])',

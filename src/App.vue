@@ -1,9 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/IST/0900">IST:0900</router-link>
-    </div>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <router-link to="/" class="navbar-item">
+          <img width="60" src="@/assets/logo.svg">
+          <img width="200" src="@/assets/wordmark.svg">
+        </router-link>
+        <router-link class="navbar-item is-size-4" to="/">
+          About
+        </router-link>
+        <router-link class="navbar-item is-size-4" to="/IST/0900">
+          Example
+        </router-link>
+      </div>
+
+    </nav>
     <router-view/>
   </div>
 </template>

@@ -28,18 +28,29 @@ $red: hsl(348, 100%, 61%) !default;
 
 // Typography
 
-$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-  "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-sans-serif: BlinkMacSystemFont,
+-apple-system,
+"Segoe UI",
+"Roboto",
+"Oxygen",
+"Ubuntu",
+"Cantarell",
+"Fira Sans",
+"Droid Sans",
+"Helvetica Neue",
+"Helvetica",
+"Arial",
+sans-serif !default;
 $family-monospace: monospace !default;
 $render-mode: optimizeLegibility !default;
 
-$size-1: 3rem !default;
-$size-2: 2.5rem !default;
-$size-3: 2rem !default;
-$size-4: 1.5rem !default;
-$size-5: 1.25rem !default;
-$size-6: 1rem !default;
-$size-7: 0.75rem !default;
+$size-1: 4rem !default;
+$size-2: 3.5rem !default;
+$size-3: 3rem !default;
+$size-4: 2.5rem !default;
+$size-5: 2rem !default;
+$size-6: 1.5rem !default;
+$size-7: 1rem !default;
 
 $weight-light: 300 !default;
 $weight-normal: 400 !default;
@@ -54,11 +65,11 @@ $gap: 32px !default;
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
 $tablet: 769px !default;
 // 960px container + 4rem
-$desktop: 960px + (2 * $gap) !default;
+$desktop: 960px+(2 * $gap) !default;
 // 1152px container + 4rem
-$widescreen: 1152px + (2 * $gap) !default;
+$widescreen: 1152px+(2 * $gap) !default;
 // 1344px container + 4rem;
-$fullhd: 1344px + (2 * $gap) !default;
+$fullhd: 1344px+(2 * $gap) !default;
 
 // Miscellaneous
 
@@ -143,10 +154,17 @@ $link-active-border: $grey-dark !default;
 
 // Typography
 
-$family-primary: $family-sans-serif !default;
+$family-primary: 'Miriam Libre' !default;
+$family-heading: 'Chelsea Market' !default;
+$family-digital: 'LLPixel' !default;
 $family-code: $family-monospace !default;
 
 $size-small: $size-7 !default;
 $size-normal: $size-6 !default;
 $size-medium: $size-5 !default;
 $size-large: $size-4 !default;
+
+
+// Navbar
+$navbar-height: 4rem;
+$navbar-item-img-max-height: 3rem;

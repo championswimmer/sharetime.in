@@ -4,6 +4,12 @@ import router from './router'
 import store from './store'
 import { sync } from 'vuex-router-sync'
 import './registerServiceWorker'
+
+// Fonts
+import '@/assets/fonts/google-font-imports.css'
+import '@/assets/fonts/local.css'
+
+// Styles
 import Buefy from 'buefy'
 import './assets/scss/app.scss'
 

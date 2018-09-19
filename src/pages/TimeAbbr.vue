@@ -8,7 +8,6 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { DateTime } from 'luxon'
 import timezones, { TimeZone } from '@/assets/timezones'
 
 @Component
