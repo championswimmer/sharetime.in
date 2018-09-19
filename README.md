@@ -1,5 +1,9 @@
 # sharetime.in
 
+## Demo
+
+https://sharetime-in.netlify.com/ 
+
 ## Project setup
 ```
 yarn install
