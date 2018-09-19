@@ -35,20 +35,33 @@ $colors: map-merge($colors, $addColors);
 
 
 h1 {
-  font-size: 4rem;
-  font-family: $family-digital;
+  font-size: 3rem;
+  font-family: $family-heading;
 }
 
+h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: $family-heading;
+
+  &:nth-child(3n + 0) {
+    color: $sharetimeColor1
+  }
+
+  &:nth-child(3n + 1) {
+    color: $sharetimeColor2
+  }
+
+  &:nth-child(3n + 2) {
+    color: $sharetimeColor3
+  }
 }
 
 .navbar {
   * {
-    font-family: $family-digital;
+    font-family: $family-heading;
     font-weight: bold;
   }
 }

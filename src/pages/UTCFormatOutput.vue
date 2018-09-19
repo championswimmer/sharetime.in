@@ -1,7 +1,17 @@
 <template>
-  <div class="container">
-    <h2>{{output}}</h2>
-  </div>
+  <section class="section">
+    <div class="content">
+      <div class="card">
+        <div class="card-header">
+          {{input}}
+        </div>
+        <div class="card-content">
+          {{input.zoneName}}
+        </div>
+      </div>
+      <h2>{{formattedOutput}}</h2>
+    </div>
+  </section>
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
@@ -17,14 +27,14 @@ interface RouteParams {
 export default class UTCFormatOutput extends Vue {
   rParams: RouteParams = this.$store.state.route.params
   timezone = this.rParams.continent + '/' + this.rParams.city
-  output = ''
+  input?: DateTime = DateTime.fromJSDate(new Date())
+  formattedOutput = ''
 
   created() {
-    this.output = DateTime.fromFormat(this.rParams.time, 'HHmm', {
+    this.input = DateTime.fromFormat(this.rParams.time, 'HHmm', {
       zone: this.timezone
     })
-      .toLocal()
-      .toFormat('hh:mm a')
+    this.formattedOutput = this.input.toLocal().toFormat('hh:mm a')
   }
 }
 </script>
