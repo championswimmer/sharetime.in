@@ -9,12 +9,12 @@
           {{input.zoneName}}
         </div>
       </div>
-      <h2>{{formattedOutput}}</h2>
+      <h2>{{output.toFormat('hh:mm a')}}</h2>
     </div>
   </section>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Watch } from 'vue-property-decorator'
 import { DateTime } from 'luxon'
 
 interface RouteParams {
@@ -24,17 +24,19 @@ interface RouteParams {
 }
 
 @Component
-export default class UTCFormatOutput extends Vue {
+export default class Time extends Vue {
   rParams: RouteParams = this.$store.state.route.params
   timezone = this.rParams.continent + '/' + this.rParams.city
-  input?: DateTime = DateTime.fromJSDate(new Date())
-  formattedOutput = ''
+  input = DateTime.fromJSDate(new Date(), { zone: this.timezone })
+  output?: DateTime
 
   created() {
-    this.input = DateTime.fromFormat(this.rParams.time, 'HHmm', {
-      zone: this.timezone
-    })
-    this.formattedOutput = this.input.toLocal().toFormat('hh:mm a')
+    if (this.rParams.time !== 'now') {
+      this.input = DateTime.fromFormat(this.rParams.time, 'HHmm', {
+        zone: this.timezone
+      })
+    }
+    this.output = this.input.toLocal()
   }
 }
 </script>

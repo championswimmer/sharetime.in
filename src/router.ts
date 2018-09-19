@@ -14,14 +14,14 @@ export default new Router({
       component: About
     },
     {
-      path: '/:tz([A-Z]{2,4})/:time([0-2][0-9][0-5][0-9])',
-      name: 'time',
-      component: () => import('@/pages/TimeAbbr.vue')
+      path: '/:tz([A-Z]{2,4})/:time([0-2][0-9][0-5][0-9]|now)',
+      name: 'abbr_time',
+      component: () => import('@/pages/abbr/Time.vue')
     },
     {
-      path: '/:continent/:city/:time([0-2][0-9][0-5][0-9])',
-      name: 'UTCFormatOutput',
-      component: () => import('@/pages/UTCFormatOutput.vue')
+      path: '/:continent/:city/:time([0-2][0-9][0-5][0-9]|now)',
+      name: 'IANA_time',
+      component: () => import('@/pages/IANA/Time.vue')
     }
   ]
 })
