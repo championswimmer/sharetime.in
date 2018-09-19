@@ -1,4 +1,11 @@
+/* font converted using font-converter.net. thank you! */
 @font-face {
-  font-family: 'LLPixel';
-  src: url('/fonts/llpixel.ttf') format('truetype')
+  font-family: "LLPixel";
+  src:
+    /* Modern Browsers */
+    url("/fonts/llpixel.woff2") format("woff2"),
+    /* Modern Browsers */
+    url("/fonts/llpixel.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

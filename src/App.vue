@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar">
+    <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item">
           <img width="60" src="@/assets/logo.svg">
