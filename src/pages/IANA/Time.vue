@@ -9,13 +9,14 @@
           {{input.zoneName}}
         </div>
       </div>
-      <h2>{{output.toFormat('hh:mm a')}}</h2>
+      <h2>{{output.toFormat('hh:mm:ss a')}}</h2>
     </div>
   </section>
 </template>
 <script lang="ts">
-import { Component, Vue, Watch } from 'vue-property-decorator'
 import { DateTime } from 'luxon'
+import { Component, Vue } from 'vue-property-decorator'
+import { Timer } from 'vue-plugin-timers'
 
 interface RouteParams {
   continent: string
@@ -28,7 +29,9 @@ export default class Time extends Vue {
   rParams: RouteParams = this.$store.state.route.params
   timezone = this.rParams.continent + '/' + this.rParams.city
   input = DateTime.fromJSDate(new Date(), { zone: this.timezone })
-  output?: DateTime
+  get output(): DateTime {
+    return this.input.toLocal()
+  }
 
   created() {
     if (this.rParams.time !== 'now') {
@@ -36,7 +39,16 @@ export default class Time extends Vue {
         zone: this.timezone
       })
     }
-    this.output = this.input.toLocal()
+  }
+
+  @Timer({ interval: 1000, repeat: true })
+  timeTick() {
+    this.input = DateTime.fromJSDate(new Date(), { zone: this.timezone })
+  }
+  mounted() {
+    if (this.rParams.time !== 'now') {
+      this.$timers.stop()
+    }
   }
 }
 </script>

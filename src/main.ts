@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import { sync } from 'vuex-router-sync'
 import './registerServiceWorker'
+import VueTimers from 'vue-plugin-timers'
 
 // Fonts
 import '@/assets/fonts/google-font-imports.css'
@@ -13,6 +14,7 @@ import '@/assets/fonts/local.css'
 import Buefy from 'buefy'
 import './assets/scss/app.scss'
 
+Vue.use(VueTimers)
 Vue.use(Buefy)
 
 Vue.config.productionTip = false
