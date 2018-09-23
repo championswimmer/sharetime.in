@@ -18,6 +18,7 @@
       "luxon"
     ],
     "typeRoots": [
+      "default",
       "src/types"
     ],
     "paths": {
@@ -33,7 +34,9 @@
     ]
   },
   "include": [
-    "src",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
     "tests"
   ],
   "exclude": [

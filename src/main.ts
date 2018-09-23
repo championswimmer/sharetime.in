@@ -1,3 +1,4 @@
+// import devtools from '@vue/devtools'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -5,6 +6,10 @@ import store from './store'
 import { sync } from 'vuex-router-sync'
 import './registerServiceWorker'
 import VueTimers from 'vue-plugin-timers'
+
+// if (process.env.NODE_ENV === 'development') {
+//   devtools.connect()
+// }
 
 // Fonts
 import '@/assets/fonts/google-font-imports.css'
