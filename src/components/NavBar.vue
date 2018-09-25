@@ -2,7 +2,7 @@
   <nav class="navbar is-fixed-top">
     <div class="navbar-brand">
       <router-link to="/" class="navbar-item">
-        <img width="60" src="@/assets/logo.svg">
+        <img width="24" src="@/assets/logo.svg">
         <img width="200" src="@/assets/wordmark.svg">
       </router-link>
 

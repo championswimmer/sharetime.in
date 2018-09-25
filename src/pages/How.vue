@@ -1,14 +1,15 @@
 <template>
-  <div class="container columns is-centered">
-    <div class="content column is-half has-text-centered">
+  <div class="columns is-tablet">
+    <div class="content column is-three-fifths-tablet is-offset-one-fifth-tablet has-text-centered">
       <h1>How does it work ?</h1>
       <h2>Mode 1: Share time in your timezone</h2>
       <p>
         Simply share a link of this format
-        <code>sharetime.in/{TZ}/{HHmm}</code>
+        <code class="is-size-5">sharetime.in/{TZ}/{HHmm}</code>
         <br>
-        where <code>{TZ}</code> is your timezone abbreviation 
-        and <code>{HHmm}</code> is the time in 24-hour clock
+        <code>{TZ}</code> → timezone abbreviation 
+        <br>
+        <code>{HHmm}</code> → time in 24-hr format
         <br>
       </p>
       <p>
@@ -49,10 +50,15 @@
           <code>sharetime.in/EDT/now</code>
         </router-link>
         <br>
-        <router-link class="tz-link" to="/EDT/now">
+        <router-link class="tz-link" to="/KST/now">
           <span class="tag is-small color-3">Korea Standard Time</span>
           <code>sharetime.in/KST/now</code>
         </router-link>
+        <br>
+        <small class="is-size-7">
+          (You'll notice in last link, <b><u>KST</u></b> is ambiguous and we'll ask you
+          which timezone you really mean)
+        </small>
       </p>
     </div>
   </div>

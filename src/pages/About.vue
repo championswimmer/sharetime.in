@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container has-text-centered">
         <div class="content">
-
+          <img src="@/assets/logo.svg" width="30%">
           <h4>Ever had a conference with people from across the globe ?</h4>
           <p>Then I bet you want an easy way to <b>sharetime.in</b> your timezone</p>
 
