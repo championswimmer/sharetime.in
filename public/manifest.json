@@ -2,6 +2,14 @@
   "name": "sharetime.in",
   "short_name": "sharetime.in",
   "icons": [{
+      "src": "/img/icons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }, {
+      "src": "/img/icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }, {
       "src": "/img/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
@@ -22,7 +30,7 @@
       "type": "image/png"
     },
     {
-      "src": "/img/icons/icon-152x152.png",
+      "src": "/img/icons/apple-touch-icon-152x152.png",
       "sizes": "152x152",
       "type": "image/png"
     },
