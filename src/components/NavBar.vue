@@ -13,12 +13,19 @@
       </a>
     </div>
     <div class="navbar-menu" :class="{'is-active': expanded}" @click="toggle()">
-      <router-link class="navbar-item is-size-4" to="/">
-        About
-      </router-link>
-      <router-link class="navbar-item is-size-4" to="/how">
-        How?
-      </router-link>
+      <div class="navbar-start">
+        <router-link class="navbar-item is-size-4" to="/">
+          About
+        </router-link>
+        <router-link class="navbar-item is-size-4" to="/how">
+          How?
+        </router-link>
+      </div>
+      <div class="navbar-end">
+        <a class="navbar-item is-size-7" target="_blank" href="https://github.com/coding-blocks/sharetime.in">
+          Source (Github) ↗
+        </a>
+      </div>
     </div>
 
   </nav>
