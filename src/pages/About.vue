@@ -15,7 +15,7 @@
         </div>
         <div class="content">
           <h1>Try it now</h1>
-          <p>Send the following URL to your friend in a differeent timezone</p>
+          <p>Send the following URL to your friend in a different timezone</p>
           <div class="tags has-addons is-narrow">
             <code class="tag is-medium">sharetime.in/{{zone.abbr}}/{{timeNow.toFormat('HHmm')}}</code>
             <a @click="copyUrl" class="tag is-medium is-info"><i class="fas fa-copy"></i></a>
