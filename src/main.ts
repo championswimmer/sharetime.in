@@ -8,6 +8,7 @@ import './registerServiceWorker'
 // Plugins
 import VueTimers from 'vue-plugin-timers'
 import VueClipboard from 'vue-clipboard2'
+import VueAnalytics from 'vue-analytics'
 
 // if (process.env.NODE_ENV === 'development') {
 //   devtools.connect()
@@ -25,6 +26,13 @@ import './assets/scss/app.scss'
 Vue.use(VueTimers)
 Vue.use(Buefy)
 Vue.use(VueClipboard)
+Vue.use(VueAnalytics, {
+  id: 'UA-51064506-3',
+  router,
+  autoTracking: {
+    screenview: true
+  }
+})
 
 Vue.config.productionTip = false
 
