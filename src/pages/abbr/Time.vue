@@ -36,9 +36,6 @@
   * {
     padding: 0 0.25rem;
   }
-  h3 {
-    font-size: 2rem;
-  }
 }
 .card {
   margin: 1rem;

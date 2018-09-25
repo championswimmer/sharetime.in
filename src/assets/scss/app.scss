@@ -32,7 +32,9 @@ $colors: map-merge($colors, $addColors);
 @import "~buefy/src/scss/buefy";
 
 // 4. Provide custom buefy overrides and site styles here
-
+body {
+  font-size: $size-normal;
+}
 
 h1,
 h2,

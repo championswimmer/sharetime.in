@@ -44,13 +44,13 @@ sans-serif !default;
 $family-monospace: monospace !default;
 $render-mode: optimizeLegibility !default;
 
-$size-1: 4.25rem !default;
-$size-2: 3.75rem !default;
-$size-3: 3.25rem !default;
-$size-4: 2.75rem !default;
-$size-5: 2.25rem !default;
-$size-6: 1.75rem !default;
-$size-7: 1.25rem !default;
+$size-1: 2.5rem; // !default;
+$size-2: 2.25rem; // !default;
+$size-3: 2rem; // !default;
+$size-4: 1.75rem; // !default;
+$size-5: 1.5rem; // !default;
+$size-6: 1.25rem; // !default;
+$size-7: 1rem; // !default;
 
 $weight-light: 300 !default;
 $weight-normal: 400 !default;
@@ -154,16 +154,16 @@ $link-active-border: $grey-dark !default;
 
 // Typography
 
-$font-family-pixel: 'LLPixel' !default;
-$font-family-mono: 'Miriam Libre' !default;
-$family-primary: $font-family-mono;
+$font-family-pixel: 'LLPixel';
+$font-family-sketch: 'Cabin Sketch';
+$family-primary: $font-family-sketch;
 $family-heading: $font-family-pixel;
-$family-code: $font-family-mono;
+$family-code: $family-monospace;
 
-$size-small: $size-7 !default;
-$size-normal: $size-6 !default;
-$size-medium: $size-5 !default;
-$size-large: $size-4 !default;
+$size-small: $size-7; // !default;
+$size-normal: $size-6; // !default;
+$size-medium: $size-5; // !default;
+$size-large: $size-4; // !default;
 
 // Navbar
 $navbar-height: 4rem;
