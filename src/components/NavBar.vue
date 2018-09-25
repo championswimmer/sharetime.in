@@ -13,8 +13,8 @@
       </a>
     </div>
     <div class="navbar-menu" :class="{'is-active': expanded}" @click="toggle()">
-      <router-link class="navbar-item is-size-4" to="/">
-        About
+      <router-link class="navbar-item is-size-4" to="/how">
+        How?
       </router-link>
       <router-link class="navbar-item is-size-4" to="/IST/0900">
         Example

@@ -19,9 +19,20 @@ export default new Router({
       component: () => import('@/pages/abbr/Time.vue')
     },
     {
-      path: '/:continent/:city/:time([0-2][0-9][0-5][0-9]|now)',
-      name: 'IANA_time',
-      component: () => import('@/pages/IANA/Time.vue')
+      path: '/:continent/:city',
+      component: () => import('@/pages/IANA/index.vue'),
+      children: [
+        {
+          path: ':time([0-2][0-9][0-5][0-9])',
+          name: 'IANA_time',
+          component: () => import('@/pages/IANA/Time.vue')
+        },
+        {
+          path: 'now',
+          name: 'IANA_now',
+          component: () => import('@/pages/IANA/Now.vue')
+        }
+      ]
     }
   ]
 })

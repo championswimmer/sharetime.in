@@ -1,2 +1,3 @@
-# path          redirect              statuscode
-/*              /                      200
+# path          redirect                statuscode
+
+/*              /index.html             200
