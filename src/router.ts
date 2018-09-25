@@ -14,6 +14,11 @@ export default new Router({
       component: About
     },
     {
+      path: '/how',
+      name: 'how',
+      component: () => import('@/pages/How.vue')
+    },
+    {
       path: '/:tz([A-Z]{2,4})/:time([0-2][0-9][0-5][0-9]|now)',
       name: 'abbr_time',
       component: () => import('@/pages/abbr/Time.vue')

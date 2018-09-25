@@ -17,10 +17,6 @@
       "chai",
       "luxon"
     ],
-    "typeRoots": [
-      "default",
-      "src/types"
-    ],
     "paths": {
       "@/*": [
         "src/*"
