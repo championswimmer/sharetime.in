@@ -5,15 +5,15 @@
         <div class="is-narrow is-marginless">
           Time as provided
         </div>
-        <h3 class="column is-narrow is-marginless">
+        <h2 class="column is-narrow is-marginless">
           {{input.toFormat('HHmm')}}
-        </h3>
+        </h2>
         <div class="is-narrow is-marginless">
           in <b>{{input.zoneName}}</b> ({{input.offsetNameShort}}) is
         </div>
       </div>
       <div class="content">
-        <h1>{{output.toFormat('hh:mm:ss a')}}</h1>
+        <h1 class="is-size-1">{{output.toFormat('hh:mm:ss a')}}</h1>
         <div>in your local timezone</div>
         <h3 class="is-marginless"><b>{{output.zoneName}}</b> ({{output.offsetNameShort}})</h3>
       </div>

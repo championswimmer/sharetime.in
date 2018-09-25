@@ -1,22 +1,23 @@
-/* font converted using font-converter.net. thank you! */
 @font-face {
-  font-family: "MobileFont";
+  font-family: 'LLPixel';
   src:
-    url("/fonts/mobile-font.woff2") format("woff2"),
-    url("/fonts/mobile-font.woff") format("woff"),
-    url("/fonts/mobile-font.eot") format("embedded-opentype"),
-    url("/fonts/mobile-font.svg") format("svg"),
-    url("/fonts/LLPIXEL3.ttf") format("truetype");
-  font-weight: bold;
+    url('/fonts/LLPixel.woff2') format('woff2'),
+    url('/fonts/LLPixel.woff') format('woff'),
+    url('/fonts/LLPixel.svg#LLPixel') format('svg'),
+    url('/fonts/LLPixel.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/LLPixel.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MobileFont";
+  font-family: 'LLPixel';
   src:
-    url("/fonts/mobile-font.woff2") format("woff2"),
-    url("/fonts/mobile-font.woff") format("woff"),
-    url("/fonts/LLPIXEL3.ttf") format("truetype");
-  font-weight: normal;
+    url('/fonts/LLPixel.woff2') format('woff2'),
+    url('/fonts/LLPixel.woff') format('woff'),
+    url('/fonts/LLPixel.svg#LLPixel') format('svg'),
+    url('/fonts/LLPixel.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/LLPixel.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
