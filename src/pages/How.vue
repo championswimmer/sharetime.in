@@ -5,7 +5,7 @@
       <h2>Mode 1: Share time in your timezone</h2>
       <p>
         Simply share a link of this format
-        <code class="is-size-5">sharetime.in/{TZ}/{HHmm}</code>
+        <code class="is-size-6">sharetime.in/{TZ}/{HHmm}</code>
         <br>
         <code>{TZ}</code> → timezone abbreviation
         <br>
