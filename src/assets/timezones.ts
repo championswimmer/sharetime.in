@@ -880,7 +880,7 @@ export default [
     offset: 5.5,
     isdst: false,
     text: '(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi',
-    utc: ['Asia/Kolkata']
+    utc: ['Asia/Kolkata', 'Asia/Calcutta']
   },
   {
     value: 'Sri Lanka Standard Time',

@@ -7,7 +7,7 @@
         Simply share a link of this format
         <code class="is-size-5">sharetime.in/{TZ}/{HHmm}</code>
         <br>
-        <code>{TZ}</code> → timezone abbreviation 
+        <code>{TZ}</code> → timezone abbreviation
         <br>
         <code>{HHmm}</code> → time in 24-hr format
         <br>
@@ -104,7 +104,7 @@ import timezones, { TimeZone } from '@/assets/timezones'
 
 @Component
 export default class How extends Vue {
-  zone?: TimeZone = timezones.find((zone) => zone.utc.includes(Settings.defaultZoneName))
+  zone = timezones.find((zone) => zone.offset * 60 === Settings.defaultZone.offset(0))
   timeNow = DateTime.fromJSDate(new Date())
   get timeNowShareUrl() {
     return `https://sharetime.in/${this.zone!.abbr}/${this.timeNow.toFormat('HHmm')}`
@@ -118,6 +118,5 @@ export default class How extends Vue {
       container: '.content'
     })
   }
-  created() {}
 }
 </script>
