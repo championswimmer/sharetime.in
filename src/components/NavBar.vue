@@ -2,8 +2,8 @@
   <nav class="navbar is-fixed-top">
     <div class="navbar-brand">
       <router-link to="/" class="navbar-item">
-        <img width="24" src="@/assets/logo.svg">
-        <img width="200" src="@/assets/wordmark.svg">
+        <img width="24" src="@/assets/logo.svg" alt="[logo]">
+        <img width="200" src="@/assets/wordmark.svg" alt="sharetime.in">
       </router-link>
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{'is-active': expanded}" @click="toggle()">
