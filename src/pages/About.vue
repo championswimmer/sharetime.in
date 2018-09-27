@@ -48,7 +48,7 @@ import timezones, { TimeZone } from '@/assets/timezones'
 
 @Component
 export default class About extends Vue {
-  zone = timezones.find((zone) => zone.utc.includes(Settings.defaultZoneName))
+  zone = timezones.find((zone) => zone.offset * 60 === Settings.defaultZone.offset(0))
   timeNow = DateTime.fromJSDate(new Date())
   get timeNowShareUrl() {
     return `https://sharetime.in/${this.zone!.abbr}/${this.timeNow.toFormat('HHmm')}`
@@ -61,7 +61,5 @@ export default class About extends Vue {
       container: '.content'
     })
   }
-
-  created() {}
 }
 </script>
