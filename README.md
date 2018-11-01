@@ -1,8 +1,8 @@
 # sharetime.in
 
-## Demo
+## Try it out
 
-https://sharetime-in.netlify.com/ 
+https://sharetime.in
 
 ## Project setup
 ```
